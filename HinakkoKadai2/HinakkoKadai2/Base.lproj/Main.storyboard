@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HinakkoKadai2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GQb-4u-TTF">
+                                <rect key="frame" x="109" y="79" width="175" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GgI-c0-Vq3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pG9-XC-qgq">
+                                <rect key="frame" x="109" y="139" width="175" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VhV-75-kjb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6ut-Sb-FYv">
+                                <rect key="frame" x="109" y="199" width="175" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Rxb-V9-6qC"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="+"/>
+                                    <segment title="-"/>
+                                    <segment title="×"/>
+                                    <segment title="÷"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="AccentColor"/>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WA3-PG-VBD">
+                                <rect key="frame" x="159" y="259" width="75" height="24"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="PushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uF8-g8-glp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4U-lf-baj">
+                                <rect key="frame" x="42" y="289" width="308" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GQb-4u-TTF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="5rW-uh-pD9"/>
+                            <constraint firstItem="p4U-lf-baj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="8cz-Na-5Yp"/>
+                            <constraint firstItem="WA3-PG-VBD" firstAttribute="top" secondItem="6ut-Sb-FYv" secondAttribute="bottom" constant="20" id="AvX-50-2Vn"/>
+                            <constraint firstItem="6ut-Sb-FYv" firstAttribute="trailing" secondItem="GQb-4u-TTF" secondAttribute="trailing" id="EBZ-kX-i1g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p4U-lf-baj" secondAttribute="bottom" constant="508" id="KGI-Q2-264"/>
+                            <constraint firstItem="pG9-XC-qgq" firstAttribute="trailing" secondItem="GQb-4u-TTF" secondAttribute="trailing" id="Noh-kN-y9A"/>
+                            <constraint firstItem="WA3-PG-VBD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="S7z-wP-QT4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WA3-PG-VBD" secondAttribute="trailing" constant="159" id="ZGB-cL-wYn"/>
+                            <constraint firstItem="6ut-Sb-FYv" firstAttribute="top" secondItem="pG9-XC-qgq" secondAttribute="bottom" constant="20" id="ZXp-4S-Tir"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GQb-4u-TTF" secondAttribute="trailing" constant="109" id="hEt-DO-wVj"/>
+                            <constraint firstItem="GQb-4u-TTF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hyz-39-xs4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p4U-lf-baj" secondAttribute="trailing" constant="43" id="lN8-rw-RLD"/>
+                            <constraint firstItem="p4U-lf-baj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" id="lm3-gJ-1R6"/>
+                            <constraint firstItem="pG9-XC-qgq" firstAttribute="top" secondItem="GQb-4u-TTF" secondAttribute="bottom" constant="20" id="oI8-0h-ZUP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WA3-PG-VBD" secondAttribute="bottom" constant="535" id="urz-Pf-h0E"/>
+                            <constraint firstItem="pG9-XC-qgq" firstAttribute="leading" secondItem="GQb-4u-TTF" secondAttribute="leading" id="vX4-4g-Klk"/>
+                            <constraint firstItem="6ut-Sb-FYv" firstAttribute="leading" secondItem="GQb-4u-TTF" secondAttribute="leading" id="xww-FN-Szn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calculatedControl" destination="6ut-Sb-FYv" id="03p-QG-rUn"/>
+                        <outlet property="label" destination="p4U-lf-baj" id="DMG-PM-vur"/>
+                        <outlet property="textField1" destination="GQb-4u-TTF" id="wDi-yk-bLP"/>
+                        <outlet property="textField2" destination="pG9-XC-qgq" id="iyR-Qt-nmp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.572519083969468" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
